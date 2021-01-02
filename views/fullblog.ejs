@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/fullblog.css">
+</head>
+<body>
+    <%- include('header'); -%>
+    <div class="blog">
+    <div class="card">
+        <h1><%= blog.title %></h1>
+        <p><%= blog.body %></p>
+    </div>
+        <div class="Read_more">
+            <h2>Other Featured Blogs</h2>
+            <% for (var i = 0; i < other.length; i++){ %>
+                <% if(i!=id && i<6){ %>
+                    <div class="f_blog">
+                    <h3><%= other[i].title %></h3>
+                    <p><%= other[i].body.substring(0,300) %>
+                    <a href="/posts/<%= i %>" class="see_more">...... read more</a></p>
+                    </div>
+                    <% } %>
+                   <% }; %>
+        </div>
+    </div>
+
+    <%- include('footer'); -%>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.form_container{
+    height: 80vh;
+    display: flex;
+}
+.form{
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form div label{
+    font-size: 1.4rem;
+}
+
+.title{
+    max-width: 700px;
+    width: 50rem;
+    display: block;
+    height: 40px;
+    min-width: 300px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.title:focus{
+    border: 1px solid blue;
+}
+#blog{
+    max-width: 700px;
+    min-width: 300px;
+    width: 50rem;
+    height: 100px;
+    display: block;
+    border-radius: 5px;
+}
+#blog:focus{
+    border: 1px solid blue;
+}
+.submit{
+    max-width: 700px;
+    min-width: 300px;
+    width: 50rem;
+    padding: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgb(27, 222, 236);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: cornflowerblue;
+}

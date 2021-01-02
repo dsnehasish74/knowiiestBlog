@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+
+ .blog{
+     margin: 2rem 5rem;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     padding: 20px;
+ }
+ .card h1{
+     text-align: center;
+     font-size: 3rem;
+     line-height: 5rem;
+ }
+ .card{
+     line-height: 1.8rem;
+     font-size: 1.1rem;
+ }
+
+ .Read_more{
+     margin-top: 100px;
+     margin-bottom: 10px;
+     line-height: 1.5rem;
+ }
+  .f_blog{
+     margin: 20px 0px;
+ }
+
+ .see_more{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+ @media only screen and (max-width: 600px) {
+    .blog{
+       margin: 0px
+    }
+    .card{
+        font-size: 1.2rem;
+    }
+  }
