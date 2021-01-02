@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://dsnehasish74_admin:parrik@2356@cluster0.uzztp.mongodb.net/blogDb?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true } );
+mongoose.connect(process.env.DBURL, {useNewUrlParser: true, useUnifiedTopology: true } );
 
 const postSchema={
     title:String,
