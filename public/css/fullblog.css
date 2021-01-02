@@ -40,6 +40,9 @@
     .blog{
        margin: 0px
     }
+    .card h1{
+        font-size: 2rem;
+    }
     .card{
         font-size: 1.2rem;
     }
